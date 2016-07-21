@@ -1,0 +1,83 @@
+<h1>Edit your profile</h1>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6 edit_form">
+<%= form_for(@giraffe, :html => {multipart: true}) do |f| %>
+
+<div class="form-group">
+<%= f.label :image %>
+<%= f.cl_image_upload :image, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+<%= f.label :first_name %>
+<%= f.text_field :first_name, :class => 'form-control', :placeholder => 'eg. Katurtle' %>
+</div>
+
+<div class="form-group">
+<%= f.label :last_name %>
+<%= f.text_field :last_name, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+<%= f.label :dob, "Birthday" %>
+<%= f.date_field :dob, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+<%= f.label :city%>
+<%= f.text_field :city, :class => 'form-control' %>
+</div>
+
+<div class="form-group">
+<%= f.label :occupation %>
+<%= f.text_field :occupation, :class => 'form-control', :placeholder => 'eg. stripper' %>
+</div>
+
+<div class="form-group">
+<%= f.label :fav_food, "Favorite Nomz" %>
+<%= f.text_field :fav_food, :class => 'form-control', :placeholder => 'eg. K(orean) Fried Chicken' %>
+</div>
+
+<div class="form-group">
+<%= f.label :hobby %>
+<%= f.text_field :hobby, :class => 'form-control', :placeholder => 'eg. juggling bananas' %>
+</div>
+
+<div class="form-group">
+<%= f.label :bm_contribution, "Contribution for Burning Man" %>
+<%= f.text_area :bm_contribution, :class => 'form-control', :placeholder => 'eg. being me' %>
+</div>
+
+<div class="form-group">
+<%= f.label :fav_bm_memory, "Favorite memory from past Burning Mans" %>
+<%= f.text_area :fav_bm_memory, :class => 'form-control', :placeholder => 'eg. that time at sunrise...' %>
+</div>
+
+<div class="form-group">
+<%= f.label :anything_else, "Anything else?" %>
+<%= f.text_area :anything_else, :class => 'form-control', :placeholder => 'eg. that time at sunrise...'%>
+</div>
+
+<div class="form-group">
+  <%= f.label :email %>
+  <%= f.text_field :email, :autofocus => true, :required => true, :class => 'form-control' %>
+</div>
+<div class="form-group">
+  <%= f.label :anything_else %>
+  <%= f.text_field :anything_else, :class => 'form-control', :placeholder => 'eg. whatever you want' %>
+</div>
+
+<%= f.submit %>
+<% end %>
+
+<div class="controls">
+  <!-- This is morally wrong -->
+  <%= button_to 'Delete', giraffes_path, :method => :delete, :data => { :confirm => "Are you sure?" } %>
+</div>
+</div>
+<div class="col-md-3">
+</div>
+
+</div>

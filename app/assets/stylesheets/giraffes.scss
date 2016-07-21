@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
+body{
+  // background-image: url('giraffe_print.jpg');
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.thumb{
+  position:relative;
+  width: 15vw;
+  height: 15vw;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.thumb > a {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.thumb_nail{
+  border-radius: 50%;
+  background-image: url('http://www.opengeek.net/wp-content/plugins/special-recent-posts/cache/funny-face-giraffe-picture-id-8971-200x200-no.jpg');
+
+}
+.name_link{
+  color: white;
+  font-size: 2em;
+  margin: 0px auto;
+}
+
+.profiles{
+  max-width: 690px;
+  margin-right: auto;
+  margin-left: auto;
+  position:relative;
+  display: block;
+  text-align: center;
+}
+
+.profiles h1{
+  text-align: center;
+  padding-top: 25px;
+}
+
+.profiles img{
+  text-align: center;
+}
+
+.profiles ul{
+  text-decoration: none;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+.profiles li{
+  text-align: left;
+  padding-left: 100px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}

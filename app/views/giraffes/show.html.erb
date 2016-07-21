@@ -1,0 +1,27 @@
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6 profiles">
+  <h1>Hi, I'm <%= @giraffe['first_name']%>! </h1>
+  <!-- <img src = "<%= @giraffe["image"] %>"> -->
+  <%= cl_image_tag @giraffe.image, :width=>200, :height=>200, :gravity=>"auto", :class => 'thumb_nail' %>
+
+
+  <h2>My Giraffography</h2>
+  <ul>
+    <li>My name is: <%= @giraffe['first_name'] %> <%= @giraffe['last_name'] %> </li>
+    <li>I live in: <%=@giraffe['city'] %> </li>
+    <li>I am came into this beautiful world on: <%= @giraffe['birthday']%> </li>
+    <li>By day I'm a: <%=@giraffe['occupation'] %> </li>
+    <li>I love eating: <%= @giraffe['fav_food']%> </li>
+    <li>For fun I: <%= @giraffe['hobby']%> </li>
+    <li>My contribution to Burning Man is: <%= @giraffe['bm_contribution']%> </li>
+    <li>My favorite memory of Burning Man is: <%= @giraffe['fav_bm_memory']%></li>
+    <li>Lastly: <%= @giraffe['anything_else']%></li>
+  </ul>
+
+  <div class= "options">
+    <a href="/giraffes/<%= @giraffe['id'] %>/edit">Edit</a>
+  </div>
+</div>
+<div class="col-md-3"></div>
+</div>

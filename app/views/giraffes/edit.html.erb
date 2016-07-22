@@ -57,17 +57,14 @@
 
 <div class="form-group">
 <%= f.label :anything_else, "Anything else?" %>
-<%= f.text_area :anything_else, :class => 'form-control', :placeholder => 'eg. that time at sunrise...'%>
+<%= f.text_area :anything_else, :class => 'form-control', :placeholder => 'eg. whatever you want'%>
 </div>
 
 <div class="form-group">
   <%= f.label :email %>
   <%= f.text_field :email, :autofocus => true, :required => true, :class => 'form-control' %>
 </div>
-<div class="form-group">
-  <%= f.label :anything_else %>
-  <%= f.text_field :anything_else, :class => 'form-control', :placeholder => 'eg. whatever you want' %>
-</div>
+
 
 <%= f.submit %>
 <% end %>

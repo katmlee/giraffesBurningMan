@@ -1,6 +1,6 @@
 class GiraffesController < ApplicationController
-  # before_action :authorise_user, :only => [:index, :show]
-  # before_action :check_for_user, :only => [:edit, :update]
+   before_action :authorize_user, :only => [:index, :show]
+  #  before_action :check_for_user, :only => [:edit, :update]
   def index
     @giraffes = Giraffe.all
   end

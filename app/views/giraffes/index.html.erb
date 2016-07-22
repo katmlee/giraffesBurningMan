@@ -3,10 +3,13 @@
 
 <div class = 'row'>
 <% @giraffes.each do |giraffe| %>
-  <!-- <div class="col-md-3 "> -->
+  <div class="col-xs-6 col-sm-4 allGiraffes ">
     <div class="thumb" style="background-image: url(<%= cl_image_path(giraffe.image, :width=> 200, :height=>200, :gravity => "auto") if giraffe.image.present? %>); background-color: rgba(254, 195, 25, 0.5); background-size: cover; ">
-    <%= link_to giraffe.first_name, giraffe_path(giraffe), :class => "name_link"  %>
+      <%= link_to giraffe.first_name, giraffe_path(giraffe), :class => "name_link"  %>
     </div>
+  </div>
+  <!-- <div class="col-md-3 "> -->
+
   <!-- </div> -->
 <%end %>
 </div>

@@ -1,20 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600);
 body{
   // background-image: url('giraffe_print.jpg');
+  // background-position: cover;
   font-family: 'Josefin Sans', sans-serif;
 
+
+}
+.wrapper{
+  position:absolute;
+  top: 50px;
+  left: 0px;
+  width: 100vw;
+  height: calc(100% - 50px);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+  background-image: image-url('giraffe_frontage.jpg');
+  background-position: cover;
+}
+
+.wrapper h1{
+  color: white;
+}
+.navbar-default {
+    background-color: rgba(255, 0, 0, 0);
+    border-color: rgba(255, 0, 0, 0);
 }
 
 .thumb{
   position:relative;
-  width: 15vw;
-  height: 15vw;
+  // width: 15vw;
+
+  padding: 50%;
   text-align: center;
-  display: inline-block;
-  align-items: center;
+  // display: inline-block;
+  // align-items: center;
   border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
+  // padding: 10px;
+  // margin: 10px;
 }
 
 .thumb > a {
@@ -23,9 +46,14 @@ body{
   transform: translate(-50%,-50%);
 }
 
-.thumb_nail{
+.thumbnail{
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0px auto;
   background-image: url('http://www.opengeek.net/wp-content/plugins/special-recent-posts/cache/funny-face-giraffe-picture-id-8971-200x200-no.jpg');
+  background-size: cover;
 
 }
 .name_link{
@@ -34,6 +62,9 @@ body{
   margin: 0px auto;
 }
 
+.allGiraffes{
+  margin-top: 15px;
+}
 .profiles{
   max-width: 690px;
   margin-right: auto;
@@ -76,14 +107,14 @@ body{
 #clockdiv > div{
 	padding: 10px;
 	border-radius: 3px;
-	background: #00BF96;
+	background: rgba(254, 195, 25, 0.25);
 	display: inline-block;
 }
 
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: #00816A;
+	background: rgba(254, 195, 25, 1);
 	display: inline-block;
 }
 

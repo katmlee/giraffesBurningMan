@@ -3,8 +3,9 @@
 <div class="col-md-6 profiles">
   <h1>Hi, I'm <%= @giraffe['first_name']%>! </h1>
   <!-- <img src = "<%= @giraffe["image"] %>"> -->
-  <%= cl_image_tag @giraffe.image, :width=>200, :height=>200, :gravity=>"auto", :class => 'thumb_nail' %>
-
+  <div class="thumbnail" style="<%= 'background-image: url(' + cl_image_path(@giraffe.image, :width=> 200, :height=>200, :gravity => "auto") + ')' if @giraffe.image.present? %>">
+    <%#= cl_image_tag @giraffe.image, :width=>200, :height=>200, :gravity=>"auto", :class => 'thumb_nail' %>
+  </div>
 
   <h2>My Giraffography</h2>
   <ul>

@@ -17,6 +17,7 @@ body{
   padding-top: 150px;
   background-image: image-url('giraffe_frontage.jpg');
   background-size: cover;
+  z-index: -1;
 }
 
 .wrapper h1{
